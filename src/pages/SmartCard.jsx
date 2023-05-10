@@ -5,6 +5,9 @@ import React, { useState } from 'react';
 import card from '../imgs/smartphoneterminal-contactless-credit-card-application-accepting-payments-financial-transactions-online-mobile-paying-service-hand-transfers-money-phone-vector-concept_176411-4640.avif';
 
 const SmartCard = () => {
+
+  // section data
+
   const [step, setStep] = useState(1);
   const [pin, setPin] = useState('');
   const [amount, setAmount] = useState('');
@@ -12,10 +15,13 @@ const SmartCard = () => {
   const [showPopup, setShowPopup] = useState(false);
   const [copySuccess, setCopySuccess] = useState(false);
 
+
+  // handle export button 
   const handleExport = () => {
     setStep(2);
   };
 
+    // handle start button 
   const handleStart = (event) => {
     event.preventDefault();
         if (pin.length >= 4) {
@@ -23,6 +29,8 @@ const SmartCard = () => {
     }
   };
 
+
+  // every time export diffrent card number 
 
   const handleExportNow = (event) => {
     event.preventDefault();
@@ -38,6 +46,8 @@ const SmartCard = () => {
   };
 
 
+
+  // copy card data 
   const handleCopy = (event) => {
     event.preventDefault();
     const card = `Card Number: ${cardNumber}\nPIN: ${pin}\nAmount: ${amount}`;

@@ -14,14 +14,16 @@ const FormLogin = () => {
   const [isLogin , setIsLogin ]  = useState(true);
 
 
-  axios.get('https://jsonplaceholder.typicode.com/posts')
-  .then(response => {
-    console.log(response.data);
-  })
-  .catch(error => {
-    console.log(error);
-  });
+  const getAllData = async ()=>{
 
+    fetch('https://jsonplaceholder.typicode.com/todos/1')
+    .then(response => response.json())
+    .then(json => console.log(json))
+
+  }
+
+
+  getAllData()
 
 
   return (
