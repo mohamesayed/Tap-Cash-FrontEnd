@@ -1,0 +1,386 @@
+/* * Start Variables */
+
+:root {
+    --main-color: #2D5DFE;
+    --transparent-color: rgb(15 116 143 / 70%);
+    --section-padding: 100px;
+}
+
+.login-container {
+    position: "relative";
+    min-height: "100vh";
+    overflow: "hidden";
+}
+
+.panels-container {
+    position: absolute;
+    top: -10%;
+    right: 48%;
+    height: 2000px;
+    width: 2000px;
+    background-color: var(--main-color);
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.form-card {
+    width: 400px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 25px 1px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255 255 255 / 90%);
+}
+
+.input-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48%;
+    border-radius: 55px;
+    background-color: #f0f0f0;
+    height: 55px;
+    margin-bottom: 10px;
+}
+
+.input-field label {
+    padding: 0.37rem 10px 0 15px;
+    color: #acacac;
+    font-size: 1.5rem;
+}
+
+.input-field input {
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #333;
+    border: none !important;
+    background: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    padding-right: 0 !important;
+    margin-right: 10px;
+    padding: 0.375rem 0.5rem;
+}
+
+.custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.input-field input:-moz-placeholder-shown {
+    color: #aaa;
+    font-weight: 500;
+}
+
+.input-field input:placeholder-shown {
+    color: #aaa;
+    font-weight: 500;
+}
+
+
+/*  */
+
+.login-container {
+    position: "relative";
+    min-height: "100vh";
+    overflow: "hidden";
+}
+
+.btn-style {
+    width: 150px;
+    /* height: 45px; */
+    /* border-radius: 48px; */
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.5s;
+    text-transform: capitalize;
+    font-size: 18px;
+    background-color: var(--main-color);
+}
+
+
+/* Start  Login */
+
+.signin-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input {
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding: 5px;
+    width: 100%;
+    font-size: 16px;
+    color: #555;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+button {
+    height: 40px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #0069d9;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+/* End  Login */
+
+
+/* start signin */
+
+.sign-in .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    width: 500px;
+    margin-left: 150px;
+    margin-top: 150px;
+}
+
+.sign-in .container form {
+    border: none;
+    box-shadow: none;
+}
+
+.sign-in .container input[type="number"],
+.sign-in .container input[type="text"],
+.sign-in .container input[type="password"] {
+    border-bottom: 1px solid;
+    box-shadow: none;
+    margin-top: 5px;
+}
+
+.sign-in .container form .password-input {
+    margin-bottom: 30px;
+}
+
+.sign-in .container form .button {
+    margin-top: 30px;
+}
+
+.sign-in form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.sign-in label {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.sign-in input[type="number"],
+.sign-in input[type="text"],
+.sign-in input[type="password"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+}
+
+.sign-in button[type="submit"] {
+    background-color: #0077ff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.sign-in button[type="button"] {
+    background-color: transparent;
+    border: none;
+    color: #0077ff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.sign-in .password-input {
+    position: relative;
+}
+
+.sign-in .password-input button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    color: #0077ff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.sign-in .password-error {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+/* end signin */
+
+
+/* Start SignUp */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    width: 400px;
+    margin-left: -1450px;
+    margin-top: 100px;
+}
+
+.form form {
+    margin-top: 80px;
+    width: 400px;
+    box-shadow: none;
+    border: none;
+}
+
+
+/* End SignUp */
+
+
+/* start the last one  */
+
+.signup-form {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.signup-form h2 {
+    text-align: center;
+}
+
+.signup-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-form label {
+    margin-bottom: 8px;
+}
+
+.signup-form input {
+    padding: 8px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.signup-form .note {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #888;
+}
+
+.signup-form .button-group {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.signup-form button {
+    padding: 8px 16px;
+    margin-left: 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.signup-form button[type='submit'] {
+    background-color: var(--main-color);
+}
+
+
+/* start   the last one  */
+
+.signin-form {
+    border: none;
+    box-shadow: none;
+    width: 600px;
+}
+
+.signin-form .form-group .small-message {
+    margin-top: 15px;
+}
+
+.signin-form .form-group .error-message {
+    margin-top: 15px;
+    color: red;
+}
+
+.signin-form .form-group label {
+    margin-top: 15px;
+}
+
+.signin-form .form-buttons {
+    display: flex;
+    gap: 40px;
+}
+
+
+/* end  the last one  */
